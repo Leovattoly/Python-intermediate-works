@@ -1,0 +1,117 @@
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression
+import seaborn as sns
+
+data = pd.read_csv("auto.csv")
+data.head(3)
+data.isnull().sum()
+
+## droping non numeric value
+data.drop(['horsepower'],axis=1,inplace=True)
+
+##splitting data to training set and testing set
+from sklearn.model_selection import train_test_split
+train_data,test_data = train_test_split(data,test_size = 0.1,random_state = 0)
+
+##setting mpg as target value 
+x_train = data.iloc[:,1:10].values ## training Features
+y_train = data.iloc[:,0].values    ##training target value
+x_test = data.iloc[:,1:10].values  ##testing features
+y_test = data.iloc[:,0].values     ##testing target value
+
+##creating Linear regression model
+model = LinearRegression()
+
+##Fitting the model
+model.fit(x_train, y_train)
+
+##coefficient of determination value
+r_sq = model.score(x_train, y_train)
+print('coefficient of determination:', r_sq)
+
+##intercept value
+ print('intercept:', model.intercept_)
+
+print('slope:', model.coef_)
+
+##testing the model using test data set
+y_pred = model.predict(x_test)
+df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
+df
+
+###################################################################
+
+## Ridge Training
+from sklearn.linear_model import Ridge
+
+# Alpha value is 0.01
+clf = Ridge(alpha=0.01)
+clf.fit(x_train, y_train)
+score_r2 = clf.score(x_test,y_test) 
+print("R^2 score :", score_r2*100)
+
+# Alpha value is 0.1
+clf = Ridge(alpha=0.1)
+clf.fit(x_train, y_train)
+score_r2 = clf.score(x_test,y_test) 
+print("R^2 score :", score_r2*100)
+
+# Alpha value is 1
+clf = Ridge(alpha=1)
+clf.fit(x_train, y_train)
+score_r2 = clf.score(x_test,y_test) 
+print("R^2 score :", score_r2*100)
+
+# Alpha value is 10
+clf = Ridge(alpha=10)
+clf.fit(x_train, y_train)
+score_r2 = clf.score(x_test,y_test) 
+print("R^2 score :", score_r2*100)
+
+##testing the model
+y_pred = clf.predict(x_test)
+df_ridge = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
+df_ridge
+
+## Lasso Training
+from sklearn.linear_model import Lasso
+lasso_model = Lasso(alpha=0.01)
+clf.fit(x_train, y_train)
+score_r2 = clf.score(x_test,y_test) 
+print("R^2 score :", score_r2*100)
+
+# Alpha value is 0.1
+lasso_model = Lasso(alpha=0.1)
+clf.fit(x_train, y_train)
+score_r2 = clf.score(x_test,y_test) 
+print("R^2 score :", score_r2*100)
+
+# Alpha value is 1
+lasso_model = Lasso(alpha=1)
+clf.fit(x_train, y_train)
+score_r2 = clf.score(x_test,y_test) 
+print("R^2 score :", score_r2*100)
+
+# Alpha value is 10
+lasso_model = Lasso(alpha=10)
+clf.fit(x_train, y_train)
+score_r2 = clf.score(x_test,y_test) 
+print("R^2 score :", score_r2*100)
+
+###########################################################
+##KNeighborsRegressor
+
+from sklearn.neighbors import KNeighborsRegressor
+kneigh = KNeighborsRegressor(n_neighbors=5)
+kneigh.fit(x_train,y_train)
+
+##testing the model
+y_pred = kneigh.predict(x_test)
+df_kneigh = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
+df_kneigh
+
+##Accuracy
+
+score_r2 = kneigh.score(x_test,y_test)
+print("R^2 value : ",score_r2*100)

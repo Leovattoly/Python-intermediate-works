@@ -1,0 +1,100 @@
+Nov 17 04:02:14 hostname123 syslogd 1.4.1: restart.
+Nov 17 04:05:46 hostname123 su(pam_unix)[19307]: session opened for user news by (uid=0)
+Nov 17 04:05:47 hostname123 su(pam_unix)[19307]: session closed for user news
+Nov 17 10:57:11 hostname123 sshd[32765]: Did not receive identification string from 2xx.71.188.192
+Nov 17 10:57:11 hostname123 sshd[32766]: Did not receive identification string from 2xx.71.188.192
+Nov 17 10:57:11 hostname123 sshd[32767]: Did not receive identification string from 2xx.71.188.192
+Nov 17 19:26:43 hostname123 sshd[2019]: Did not receive identification string from 200.xx.72.129
+Nov 18 04:06:04 hostname123 su(pam_unix)[5019]: session opened for user news by (uid=0)
+Nov 18 04:06:05 hostname123 su(pam_unix)[5019]: session closed for user news
+Nov 18 18:55:06 hostname123 sshd[11204]: Did not receive identification string from 6x.x2.248.243
+Nov 19 04:05:42 hostname123 su(pam_unix)[15422]: session opened for user news by (uid=0)
+Nov 19 04:05:49 hostname123 su(pam_unix)[15422]: session closed for user news
+Nov 20 01:12:00 hostname123 syslogd: /var/log/cron: No space left on device
+Nov 20 01:14:00 hostname123 syslogd: /var/log/maillog: No space left on device
+Nov 20 04:05:47 hostname123 su(pam_unix)[25609]: session opened for user news by (uid=0)
+Nov 20 04:05:47 hostname123 su(pam_unix)[25609]: session closed for user news
+Nov 20 14:13:11 hostname123 sshd[29854]: Did not receive identification string from 200.xx.114.131
+Nov 21 04:05:46 hostname123 su(pam_unix)[3347]: session opened for user news by (uid=0)
+Nov 21 04:05:46 hostname123 su(pam_unix)[3347]: session closed for user news
+Nov 22 04:05:26 hostname123 su(pam_unix)[12334]: session opened for user news by (uid=0)
+Nov 22 04:05:27 hostname123 su(pam_unix)[12334]: session closed for user news
+Nov 22 23:48:47 hostname123 sshd[19379]: Did not receive identification string from 19x.xx9.220.35
+Nov 22 23:48:47 hostname123 sshd[19380]: Did not receive identification string from 19x.xx9.220.35
+Nov 22 23:48:47 hostname123 Nov 22 23:48:49 hostname123 Nov 22 23:48:49 Nov 23 18:27:56 hostname123 syslogd 1.4.1: restart.
+Nov 23 18:27:57 hostname123 syslog: syslogd startup succeeded
+Nov 23 18:27:57 hostname123 syslog: klogd startup succeeded
+Nov 23 18:27:57 hostname123 kernel: klogd 1.4.1, log source = /proc/kmsg started.
+Nov 23 18:27:57 hostname123 kernel: Linux version 2.4.18-3 (bhcompile@daffy.perf.redhat.com) (gcc version 2.96 20000731 (Red Hat Linux 7.3 2.96-110)) #1 Thu Apr 18 07:37:53 EDT 2002
+Nov 23 18:27:57 hostname123 kernel: BIOS-provided physical RAM map:
+Nov 23 18:27:57 hostname123 kernel:  BIOS-e820: 0000000000000000 - 000000000009f800 (usable)
+Nov 23 18:27:57 hostname123 kernel:  BIOS-e820: 000000000009f800 - 00000000000a0000 (reserved)
+Nov 23 18:27:57 hostname123 kernel:  BIOS-e820: 00000000000e0000 - 0000000000100000 (reserved)
+Nov 23 18:27:57 hostname123 kernel:  BIOS-e820: 0000000000100000 - 0000000010000000 (usable)
+Nov 23 18:27:57 hostname123 kernel:  BIOS-e820: 00000000fff80000 - 0000000100000000 (reserved)
+Nov 23 18:27:57 hostname123 kernel: On node 0 totalpages: 65536
+Nov 23 18:27:57 hostname123 kernel: zone(0): 4096 pages.
+Nov 23 18:27:57 hostname123 kernel: zone(1): 61440 pages.
+Nov 23 18:27:57 hostname123 kernel: zone(2): 0 pages.
+Nov 23 18:27:57 hostname123 kernel: Kernel command line: ro root=/dev/hda5
+Nov 23 18:27:57 hostname123 kernel: Initializing CPU#0
+Nov 23 18:27:57 hostname123 kernel: Detected 233.291 MHz processor.
+Nov 23 18:27:57 hostname123 kernel: Console: colour VGA+ 80x25
+Nov 23 18:27:57 hostname123 kernel: Calibrating delay loop... 465.30 BogoMIPS
+Nov 23 18:27:57 hostname123 kernel: Memory: 255504k/262144k available (1119k kernel code, 6252k reserved, 775k data, 280k init, 0k highmem)
+Nov 23 18:27:57 hostname123 kernel: Dentry cache hash table entries: 32768 (order: 6, 262144 bytes)
+Nov 23 18:27:57 hostname123 kernel: Inode cache hash table entries: 16384 (order: 5, 131072 bytes)
+Nov 23 18:27:57 hostname123 kernel: Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+Nov 23 18:27:57 hostname123 kernel: Buffer cache hash table entries: 16384 (order: 4, 65536 bytes)
+Nov 23 18:27:57 hostname123 kernel: Page-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Nov 23 18:27:57 hostname123 kernel: CPU: L1 I cache: 16K, L1 D cache: 16K
+Nov 23 18:27:57 hostname123 kernel: CPU: L2 cache: 512K
+Nov 23 18:27:57 hostname123 keytable: Loading keymap:  succeeded
+Nov 23 18:27:57 hostname123 kernel: Intel machine check architecture supported.
+Nov 23 18:27:57 hostname123 kernel: Intel machine check reporting enabled on CPU#0.
+Nov 23 18:27:57 hostname123 kernel: CPU: Intel Pentium II (Klamath) stepping 04
+Nov 23 18:27:57 hostname123 kernel: Checking 'hlt' instruction... OK.
+Nov 23 18:27:57 hostname123 kernel: POSIX conformance testing by UNIFIX
+Nov 23 18:27:57 hostname123 kernel: mtrr: v1.40 (20010327) Richard Gooch (rgooch@atnf.csiro.au)
+Nov 23 18:27:57 hostname123 kernel: mtrr: detected mtrr type: Intel
+Nov 23 18:27:57 hostname123 kernel: PCI: PCI BIOS revision 2.10 entry at 0xfd9b3, last bus=1
+Nov 23 18:27:57 hostname123 kernel: PCI: Using configuration type 1
+Nov 23 18:27:57 hostname123 kernel: PCI: Probing PCI hardware
+Nov 23 18:27:57 hostname123 keytable: Loading system font:  succeeded
+Nov 23 18:27:57 hostname123 kernel: Unknown bridge resource 0: assuming transparent
+Nov 23 18:27:57 hostname123 kernel: Unknown bridge resource 1: assuming transparent
+Nov 23 18:27:57 hostname123 kernel: Unknown bridge resource 2: assuming transparent
+Nov 23 18:27:57 hostname123 kernel: PCI: Using IRQ router PIIX [8086/7110] at 00:07.0
+Nov 23 18:27:57 hostname123 kernel: Limiting direct PCI/PCI transfers.
+Nov 23 18:27:57 hostname123 kernel: isapnp: Scanning for PnP cards...
+Nov 23 18:27:57 hostname123 kernel: isapnp: No Plug & Play device found
+Nov 23 18:27:57 hostname123 kernel: Linux NET4.0 for Linux 2.4
+Nov 23 18:27:57 hostname123 kernel: Based upon Swansea University Computer Society NET3.039
+Nov 23 18:27:58 hostname123 kernel: Initializing RT netlink socket
+Nov 23 18:27:58 hostname123 kernel: apm: BIOS version 1.2 Flags 0x03 (Driver version 1.16)
+Nov 23 18:27:58 hostname123 kernel: Starting kswapd
+Nov 23 18:27:58 hostname123 kernel: VFS: Diskquotas version dquot_6.5.0 initialized
+Nov 23 18:27:58 hostname123 kernel: Detected PS/2 Mouse Port.
+Nov 23 18:27:58 hostname123 random: Initializing random number generator:  succeeded
+Nov 23 18:27:58 hostname123 kernel: pty: 2048 Unix98 ptys configured
+Nov 23 18:27:58 hostname123 kernel: Serial driver version 5.05c (2001-07-08) with MANY_PORTS MULTIPORT SHARE_IRQ SERIAL_PCI ISAPNP enabled
+Nov 23 18:27:58 hostname123 kernel: ttyS00 at 0x03f8 (irq = 4) is a 16550A
+Nov 23 18:27:58 hostname123 kernel: Real Time Clock Driver v1.10e
+Nov 23 18:27:58 hostname123 kernel: block: 496 slots per queue, batch=124
+Nov 23 18:27:58 hostname123 kernel: Uniform Multi-Platform E-IDE driver Revision: 6.31
+Nov 23 18:27:58 hostname123 kernel: ide: Assuming 33MHz system bus speed for PIO modes; override with idebus=xx
+Nov 23 18:27:58 hostname123 kernel: PIIX4: IDE controller on PCI bus 00 dev 39
+Nov 23 18:27:58 hostname123 kernel: PIIX4: chipset revision 1
+Nov 23 18:27:58 hostname123 kernel: PIIX4: not 100%% native mode: will probe irqs later
+Nov 23 18:27:58 hostname123 kernel:     ide0: BM-DMA at 0x14c0-0x14c7, BIOS settings: hda:DMA, hdb:pio
+Nov 23 18:27:58 hostname123 kernel:     ide1: BM-DMA at 0x14c8-0x14cf, BIOS settings: hdc:DMA, hdd:pio
+Nov 23 18:27:58 hostname123 kernel: hda: QUANTUM FIREBALL SE6.4A, ATA DISK drive
+Nov 23 18:27:58 hostname123 kernel: hdc: TOSHIBA CD-ROM XM-6202B, ATAPI CD/DVD-ROM drive
+Nov 23 18:27:58 hostname123 kernel: ide0 at 0x1f0-0x1f7,0x3f6 on irq 14
+Nov 23 18:27:58 hostname123 kernel: ide1 at 0x170-0x177,0x376 on irq 15
+Nov 23 18:27:58 hostname123 kernel: blk: queue c035e6a4, I/O limit 4095Mb (mask 0xffffffff)
+Nov 23 18:27:58 hostname123 kernel: hda: 12594960 sectors (6449 MB) w/80KiB Cache, CHS=784/255/63, UDMA(33)
+Nov 23 18:27:58 hostname123 kernel: ide-floppy driver 0.99.newide
+Nov 23 18:27:58 hostname123 kernel: Partition check:
+Nov 23 18:27:58 hostname123 kernel:  hda: hda1 hda2 hda3 hda4 < hda5 hda6 hda7 >
+Nov 23 18:27:00 hostname123 rc.sysinit: Mounting proc filesystem:  succeeded 

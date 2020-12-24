@@ -1,0 +1,14 @@
+lst = []
+
+value, stop, step = 5000, 135, 13
+
+while value >= 135:
+    if value % step == 0:
+        lst.append(value)
+    else:
+        pass
+    value = value-1
+    
+print(lst)
+
+print( lst[:30] )

@@ -1,0 +1,53 @@
+Answer 1.
+
+
+Code 
+
+******
+
+import turtle
+
+t = turtle.Turtle()
+
+t.pensize(1)
+
+t.pencolor("red")
+
+for i in range (100) :
+
+   t.right(40)
+
+   t.stamp()
+
+   t.forward(i+1)
+
+t.pendown()
+
+t.circle()
+
+
+Answer 2.
+
+
+import turtle
+t = turtle.Turtle()
+t.pensize(20)
+t.pencolor("orange")
+for i in range (10) :
+    t.right(36)
+    t.forward(100)
+t.hideturtle()
+t.pendown()
+
+Answer 3.
+
+import turtle
+style = ('Courier', 10, 'italic')
+t = turtle.Turtle()
+t.shape("arrow")
+t.shapesize(10)
+t.stamp()
+t.forward(120)
+t.write('Hello!', font=style)
+t.hideturtle()
+t.pendown()

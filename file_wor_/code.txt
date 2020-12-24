@@ -1,0 +1,44 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main () {
+  ifstream   myfile;
+  string data;
+  string words [10];
+  myfile.open ("numeric_character_data.txt");
+  int i =0;
+  int k = 0;
+  while (getline (myfile, data)) {
+      
+      cout<<"Contents in the file \n";
+  // Output the text from the file
+  cout << data<<"\n";
+}
+int j =0;
+for(int i = 0;i<data.length();++i)
+{
+     if(data[i] == ' ')
+    {
+        j = j+1;
+    }
+    words[j] = words[j]+data[i];
+   
+}
+k = j;
+for(int i= 0;i<=k;++i)
+{
+    cout<<"Word: "<<words[i]<<" \t length: "<<words[i].length()<<"\n";
+    
+}
+  myfile.close();
+  return 0;
+}

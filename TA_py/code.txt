@@ -1,0 +1,23 @@
+def my_TAs(ta_1, ta_2, ta_3):
+    s = ta_1+","+ta_2+",and "+ta_3+" are awesome!"
+    return s
+
+#Below are some lines of code that will test your function.
+
+#You can change the value of the variable(s) to test your
+
+#function with different inputs.
+
+#
+
+#If your function works correctly, this will originally
+
+#print: "Joshua, Jackie, and Marguerite are awesome!".
+
+test_first_TA = "Joshua"
+
+test_second_TA = "Jackie"
+
+test_third_TA = "Marguerite"
+
+print(my_TAs(test_first_TA, test_second_TA, test_third_TA))

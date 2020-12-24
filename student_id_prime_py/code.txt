@@ -1,0 +1,35 @@
+
+def primme_no_return(i):
+    if i >2:
+        for num in range(2, i):
+            if (i % num) == 0:
+                return 0
+            else:
+                return i
+    else:
+        return i
+           
+
+alternative_prime_no = [1]
+sum_alternative_prime_no =int(0)
+sum_of_id_prime_no = int(0)
+for i in range(1,1632+1,2):
+    alternative_prime_no.append(primme_no_return(i))
+#print(alternative_prime_no)
+
+std_id = [1,6,3,2,3,2,5,0,4,2]
+for i in range(0,len(std_id)):
+    k = primme_no_return(std_id[i])
+    sum_of_id_prime_no = sum_of_id_prime_no +  int(k)
+for i in range(0,len(alternative_prime_no)):
+    sum_alternative_prime_no = sum_alternative_prime_no + alternative_prime_no[i]
+print("Sum of student id prime NO:",sum_of_id_prime_no)
+print("Sum of Aleternative prime numbers: ",sum_alternative_prime_no)
+print("Difference between both: ",sum_alternative_prime_no-sum_of_id_prime_no)
+    
+
+    
+    
+    
+
+    

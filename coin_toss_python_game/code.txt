@@ -1,0 +1,22 @@
+import random
+
+def main():
+    guess = ""
+    for i in range(2): # looping for two times
+        print(i+1,"th chance:")
+        print('Guess the coin toss! Enter heads or tails:')
+        guess = input() # taking input from user end
+        
+        toss = random.choice(['heads', 'tails']) # produce a random choice from a given list
+        if toss == guess:
+            print('You got it!')
+        else:
+            if(i==0):
+                print('Nope! Guess again!')
+            else:
+                print("Wrong !")
+    print("Game Over !")
+if __name__=="__main__":
+    main()
+
+   
